@@ -1,6 +1,6 @@
 var pd = {
-  version: '1.4.8',
-  bookmarkver: '1.4',
+  version: '1.4.8-d',
+  bookmarkver: '1.4-d',
   init : function() {
     pd.checks.versions();
     if (window.pd_processing !== true) {
