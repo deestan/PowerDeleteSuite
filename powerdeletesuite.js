@@ -496,6 +496,7 @@ var pd = {
       }
     },
     edit: function (item) {
+      setTimeout(() => {
       if (pd.performActions) {
         $.ajax({
           url: '/api/editusertext',
@@ -522,7 +523,7 @@ var pd = {
         pd.task.items[0].pdEdited = true;
         pd.actions.children.handleSingle();
       }
-    },
+    }, 5000)},
   },
   ui: {
     updateDisplay: function () {
